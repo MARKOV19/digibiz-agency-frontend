@@ -13,7 +13,7 @@ const GraphismeDeveloppementPage = () => {
         <section className="text-center">
           <h1 className="text-4xl font-bold mb-4 text-orange-500">Graphisme & Développement</h1>
           <p className="text-lg text-[#14376d]">
-            De la création visuelle à la conception de sites web et d'applications, nous donnons vie à vos idées avec style et performance.
+            De la création visuelle à la conception de sites web et d&rsquo;applications, nous donnons vie à vos idées avec style et performance.
           </p>
         </section>
 

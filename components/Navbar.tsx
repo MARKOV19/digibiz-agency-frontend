@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-// @ts-ignore
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+
+import {  } from '@heroicons/react/outline';
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 

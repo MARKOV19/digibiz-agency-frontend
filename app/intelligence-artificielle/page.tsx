@@ -39,7 +39,7 @@ const IntelligenceArtificiellePage = () => {
             <div className="space-y-2">
               <Image src="/assets/services/ia/vision.jpg" alt="Vision par ordinateur" width={600} height={300} className="rounded-lg w-full object-cover" />
               <h3 className="text-xl font-bold text-[#001f3f]">Vision par ordinateur</h3>
-              <p className="text-[#14376d]">Reconnaissance d'objets, analyse vidéo, contrôle qualité visuel automatisé.</p>
+              <p className="text-[#14376d]">Reconnaissance d&rsquo;objets, analyse vidéo, contrôle qualité visuel automatisé.</p>
             </div>
           </div>
         </section>

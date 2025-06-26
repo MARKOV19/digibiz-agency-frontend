@@ -13,7 +13,7 @@ const ImportExportPage = () => {
         <section className="text-center">
           <h1 className="text-4xl font-bold mb-4 text-orange-500">Service Import-Export</h1>
           <p className="text-lg text-[#14376d]">
-            Nous vous accompagnons dans toutes les étapes de l'import-export : du sourcing au transport, jusqu’à la livraison finale.
+            Nous vous accompagnons dans toutes les étapes de l&rsquo;import-export : du sourcing au transport, jusqu’à la livraison finale.
           </p>
         </section>
 
