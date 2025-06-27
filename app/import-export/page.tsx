@@ -3,6 +3,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import CatalogueProduits from '@/components/catalogue';
+
+
 
 const ImportExportPage = () => {
   return (
@@ -45,21 +48,9 @@ const ImportExportPage = () => {
           </div>
         </section>
 
-        {/* 2. Galerie Vidéo / Produits sourcés */}
+        {/* 2. Gal */}
         <section>
-          <h2 className="text-2xl font-semibold mb-6 text-orange-500">Produits Sourcés</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <video controls className="rounded-lg w-full h-64 object-cover">
-              <source src="/assets/import/produit.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la vidéo.
-            </video>
-            <div className="grid grid-cols-2 gap-4">
-              <Image src="/assets/import/produit1.jpg" alt="Produit 1" width={300} height={200} className="rounded object-cover" />
-              <Image src="/assets/import/produit2.jpg" alt="Produit 2" width={300} height={200} className="rounded object-cover" />
-              <Image src="/assets/import/produit3.jpg" alt="Produit 3" width={300} height={200} className="rounded object-cover" />
-              <Image src="/assets/import/produit4.jpg" alt="Produit 4" width={300} height={200} className="rounded object-cover" />
-            </div>
-          </div>
+     <CatalogueProduits />
         </section>
 
         {/* 3. Témoignages Clients */}
@@ -78,6 +69,14 @@ const ImportExportPage = () => {
         {/* 4. Nos Partenaires */}
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-orange-500">Nos Partenaires</h2>
+     {/* Logos circulaires */}
+     <div className="flex flex-wrap justify-between gap-6 mb-10">
+      <Image src="/assets/partners/yy-cargo.png" alt="yy-cargo" width={80} height={80} className="rounded-full object-cover border-2 border-[#001f3f] p-1" />
+      <Image src="/assets/partners/wanslu-shop.png" alt="wanslu-shop" width={80} height={80} className="rounded-full object-cover border-2 border-[#001f3f] p-1" />
+      <Image src="/assets/partners/ged.png" alt="ged-services" width={80} height={80} className="rounded-full object-cover border-2 border-[#001f3f] p-1" />
+       <Image src="/assets/partners/sap-sap.png" alt="sap-sap" width={80} height={80} className="rounded-full object-cover border-2 border-[#001f3f] p-1" />
+       <Image src="/assets/partners/benazo.png" alt="benazo" width={80} height={80} className="rounded-full object-cover border-2 border-[#001f3f] p-1" />
+        </div>
           <div className="grid md:grid-cols-2 gap-10">
             <div>
               <h3 className="text-xl font-bold mb-2 text-[#001f3f]">Partenaires Sourcing</h3>
@@ -90,9 +89,14 @@ const ImportExportPage = () => {
             <div>
               <h3 className="text-xl font-bold mb-2 text-[#001f3f]">Partenaires Logistique</h3>
               <ul className="list-disc list-inside text-[#14376d]">
-                <li>Compagnies maritimes (Maersk, CMA-CGM...,Jfi cargo,cargo Expresse)</li>
-                <li>Entreprises de transit douanier (jfi Epresse,bipbip Expresse)</li>
-                <li>Transporteurs locaux (Go Livraison, Tika Express,bipbip Expresse ...)</li>
+                <li>Compagnies maritimes (yy-cargo...)</li>
+                <li>Entreprises de transit douanier (...)</li>
+                <li>Transporteurs locaux  :</li>
+                  <ul className="list-inside list-disc ml-6 mt-1 text-sm text-[#14376d]"  >
+                    <li>Benazo-sarl congo</li>
+                    <li>Ged services benin</li>
+                    <li>sap-sap livration cote d&rsquo;ivoire...</li>
+                    </ul>  
               </ul>
             </div>
           </div>

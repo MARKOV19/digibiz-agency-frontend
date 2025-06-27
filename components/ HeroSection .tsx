@@ -7,7 +7,7 @@ import 'swiper/css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const images = Array.from({ length: 10 }, (_, i) => `/carousel/digibiz-${i + 1}.jpg`);
+const images = Array.from({ length: 2 }, (_, i) => `/carousel/digibiz-${i + 1}.jpg`);
 
 const HeroSection = () => {
   return (
@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* Swiper carousel */}
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
         loop={true}
         slidesPerView={1}
         className="w-full h-full"
@@ -39,7 +39,7 @@ const HeroSection = () => {
                 À l’ère du digital et de l’innovation
               </p>
               <Link
-                href="/en-savoir-plus"
+                href="/contact"
                 className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition"
               >
                 En savoir plus
