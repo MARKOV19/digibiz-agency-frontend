@@ -3,7 +3,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
+const message = encodeURIComponent("Bonjour, je souhaite discuter d'un devis.\n\nEnvoyé depuis le site DIGIBIZ");
+const link = `https://wa.me/237650781725?text=${message}`;
 const GraphismeDeveloppementPage = () => {
   return (
     <main className="bg-white text-[#001f3f] py-16 px-6 font-roboto">
@@ -60,7 +61,7 @@ const GraphismeDeveloppementPage = () => {
         {/* 3. Appel à l'action */}
         <section className="text-center">
           <Link
-            href="https://wa.me/237621721682"
+            href="https://wa.me/237650781725"
             target="_blank"
             className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition text-lg"
           >

@@ -60,7 +60,7 @@ const FormationEnLignePage = () => {
         {/* 3. Appel à l'action */}
         <section className="text-center">
           <Link
-            href="https://wa.me/237621721682"
+            href="https://wa.me/237650781725"
             target="_blank"
             className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition text-lg"
           >

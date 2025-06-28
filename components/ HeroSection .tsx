@@ -7,7 +7,7 @@ import 'swiper/css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const images = Array.from({ length: 2 }, (_, i) => `/carousel/digibiz-${i + 1}.jpg`);
+const images = Array.from({ length: 1 }, (_, i) => `/carousel/digibiz-${i + 1}.jpg`);
 
 const HeroSection = () => {
   return (

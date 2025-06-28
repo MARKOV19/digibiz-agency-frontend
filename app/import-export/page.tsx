@@ -5,7 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CatalogueProduits from '@/components/catalogue';
 
-
+const message = encodeURIComponent("Bonjour, je souhaite ensavoir plus sur les importations.\n\nEnvoyé depuis le site DIGIBIZ");
+const link = `https://wa.me/237650781725?text=${message}`;
 
 const ImportExportPage = () => {
   return (
@@ -105,7 +106,7 @@ const ImportExportPage = () => {
         {/* 5. CTA WhatsApp */}
         <section className="text-center">
           <Link
-            href="https://wa.me/237621721682"
+            href="https://wa.me/237650781725"
             target="_blank"
             className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition text-lg"
           >
