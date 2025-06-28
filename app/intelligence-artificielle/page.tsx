@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 const message = encodeURIComponent("Bonjour, je souhaite discuter d'un projet IA sur mesure.\n\nEnvoyé depuis le site DIGIBIZ");
-const link = `https://wa.me/237650781725?text=${message}`;
+
 
 const IntelligenceArtificiellePage = () => {
   return (
@@ -62,7 +62,7 @@ const IntelligenceArtificiellePage = () => {
         {/* 3. Appel à l'action */}
         <section className="text-center">
           <Link
-           href={link} 
+           href={`https://wa.me/237650781725?text=${message}`} 
             target="_blank"
             className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition text-lg"
           >

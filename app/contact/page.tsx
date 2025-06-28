@@ -4,8 +4,6 @@ import React from 'react';
 import Link from 'next/link';
 
 const message = encodeURIComponent("Bonjour,\n\nEnvoyé depuis le site DIGIBIZ");
-const link = `https://wa.me/237650781725?text=${message}`;
-
 const ContactPage = () => {
   return (
     <main className="bg-white text-[#001f3f] py-16 px-6 font-roboto">
@@ -44,7 +42,7 @@ const ContactPage = () => {
 
               {/* Lien WhatsApp avec message signé */}
               <Link
-                href={link}
+                 href={`https://wa.me/237650781725?text=${message}`}
                 target="_blank"
                 className="inline-block mt-4 bg-[#14376d] text-white px-6 py-2 rounded-full hover:bg-[#003366] transition"
               >
