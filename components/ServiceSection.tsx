@@ -27,7 +27,7 @@ const services: ServiceItem[] = [
   {
     title: 'Graphisme & Développement',
     description: 'Flyers, logos, vidéos, sites web & apps',
-    href: '/graphique-video',
+    href: '/graphique-devellopement',
     image: '/assets/services/design-dev.jpg',
   },
   {
@@ -45,7 +45,7 @@ const services: ServiceItem[] = [
   {
     title: 'Formation en Ligne',
     description: 'Cours pratiques et formations professionnelles',
-    href: '/formation',
+    href: '/dev',
     image: '/assets/services/formation.jpg',
   },
 ];
