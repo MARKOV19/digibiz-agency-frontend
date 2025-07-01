@@ -226,10 +226,10 @@ const CatalogueProduits = () => {
 
   return (
     <section className="px-3 sm:px-4 md:px-6 lg:px-12">
-      <h2 className="text-2xl font-semibold text-[#001f3f] mb-2">
+      <h2 className="text-2xl font-semibold text-[white] mb-2">
         Catalogue de Produits Sourcés
       </h2>
-      <p className="text-[#14376d] mb-6">
+      <p className="text-[white] mb-6">
         Nous importons toutes variétés de produits et vous accompagnons de
         l&rsquo;achat à la livraison.
       </p>
@@ -250,8 +250,8 @@ const CatalogueProduits = () => {
               onClick={() => setActiveCategory(cat)}
               className={`whitespace-nowrap px-4 py-2 rounded-full font-medium border transition ${
                 activeCategory === cat
-                  ? 'bg-orange-500 text-white border-orange-500'
-                  : 'border-[#001f3f] text-[#14376d] hover:bg-[#001f3f] hover:text-white'
+                  ? 'bg-orange-500 text-[#001f3f] border-orange-500'
+                  : 'border-[#001f3f] text-[white] hover:bg-[#001f3f] hover:text-white'
               }`}
             >
               {cat}
@@ -266,21 +266,21 @@ const CatalogueProduits = () => {
           <div
             key={product.id}
             onClick={() => setSelectedProduct(product)}
-            className="bg-white p-2 sm:p-4 rounded shadow text-center cursor-pointer hover:scale-[1.02] transition-all duration-200"
+            className="bg-[#001f3f] p-2 sm:p-4 rounded shadow text-center cursor-pointer hover:scale-[1.02] transition-all duration-200"
           >
-            <div className="relative w-full pb-[100%] mb-2 overflow-hidden rounded">
+            <div className="relative w-full pb-[100%] mb-2 overflow-hidden rounded ">
               <Image
                 src={product.image}
                 alt={product.name}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover rounded"
+                className="object-cover rounded "
               />
             </div>
-            <h4 className="font-semibold text-[#001f3f] text-sm sm:text-base">
+            <h4 className="font-semibold text-[white] text-sm sm:text-base">
               {product.name}
             </h4>
-            <p className="text-xs sm:text-sm text-[#14376d]">
+            <p className="text-xs sm:text-sm text-[white]">
               {product.features}
             </p>
           </div>
@@ -304,10 +304,10 @@ const CatalogueProduits = () => {
               height={300}
               className="rounded object-cover mx-auto mb-4"
             />
-            <h3 className="text-xl font-bold text-[#001f3f] mb-2">
+            <h3 className="text-xl font-bold text-[white] mb-2">
               {selectedProduct.name}
             </h3>
-            <p className="text-[#14376d]">{selectedProduct.features}</p>
+            <p className="text-[white]">{selectedProduct.features}</p>
           </div>
         </div>
       )}

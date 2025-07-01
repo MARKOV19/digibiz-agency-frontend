@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
+/* Variables globales */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-:root {
   --color-background: #ffffff;
   --color-foreground: #001f3f;
-  --font-sans: 'Roboto', sans-serif;
+
+  /* Ces polices peuvent être utilisées en fallback si besoin */
+  --font-sans: 'Open Sans', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,42 +20,41 @@
   }
 }
 
+/* Style global du body, on ne redéfinit pas font-family ici car elle vient du layout */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit; /* Hérite de la police injectée par layout.tsx */
 }
 
-
-
-/*scroll bar*/
+/* -------------------------
+   Scrollbar custom et masquée
+-------------------------- */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-.scrollbar-hide{
+.scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .element-with-scrollbar {
-  overflow-x: hidden; /* Cacher la scrollbar horizontale */
+  overflow-x: hidden;
 }
 .element-with-scrollbar::-webkit-scrollbar {
-  width: 0px;  /* Largeur de la scrollbar */
+  width: 0px;
 }
-
 .element-with-scrollbar::-webkit-scrollbar-track {
-  background: transparent; /* Couleur de la piste */
+  background: transparent;
 }
-
 .element-with-scrollbar::-webkit-scrollbar-thumb {
-  background: transparent; /* Couleur de la poignée */
+  background: transparent;
 }
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
 .no-scrollbar {
-  -ms-overflow-style: none; /* IE/Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

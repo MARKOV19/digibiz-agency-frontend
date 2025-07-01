@@ -9,7 +9,7 @@ import ContactSection from '@/components/ContactSection ';
 
 const Home = () => {
   return (
-    <main className="  bg-[#] text-white">
+    <main className="  bg-[#]  text-white">
       <Navbar/>
       <HeroSection />
       <ServiceSection />

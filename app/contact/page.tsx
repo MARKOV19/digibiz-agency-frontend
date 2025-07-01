@@ -6,7 +6,7 @@ import Link from 'next/link';
 const message = encodeURIComponent("Bonjour,\n\nEnvoyé depuis le site DIGIBIZ");
 const ContactPage = () => {
   return (
-    <main className="bg-white text-[#001f3f] py-16 px-6 font-roboto">
+    <main className="bg-white text-[#001f3f]  py-16 px-6 font-roboto">
       <div className="max-w-5xl mx-auto">
         <section className="text-center">
           <h1 className="text-4xl font-bold text-[#001f3f] mb-6">Contactez-nous</h1>

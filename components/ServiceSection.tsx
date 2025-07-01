@@ -59,7 +59,7 @@ const ServiceSection: React.FC = () => {
           <Link
             key={idx}
             href={service.href}
-            className="bg-[#001f3f] rounded-xl shadow-lg overflow-hidden hover:scale-[1.02] transition-all duration-300 text-left"
+            className="bg-[#001f3f]  rounded-xl shadow-lg overflow-hidden hover:scale-[1.02] transition-all duration-300 text-left"
           >
             <div className="flex flex-col">
               <Image

@@ -1,11 +1,13 @@
+// app/layout.tsx
 import './globals.css';
 import { ReactNode } from 'react';
-import { Open_Sans } from 'next/font/google'; // Importation de la nouvelle police
+import { Open_Sans } from 'next/font/google';
 
+// Importation de la police Open Sans
 const openSans = Open_Sans({
   subsets: ['latin'],
   weight: ['400', '700'],
-  display: 'swap', // améliore le rendu rapide des polices
+  display: 'swap',
 });
 
 export const metadata = {
@@ -37,9 +39,9 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="scroll-smooth">
       <head>
-        {/* Optimisation vitesse + rendu SEO */}
+        {/* Optimisation de performance et SEO */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta charSet="utf-8" />
