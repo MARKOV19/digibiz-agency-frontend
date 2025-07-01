@@ -23,31 +23,26 @@ const MarketingDigitalPage = () => {
   />
 
   {/* Overlay sombre (optionnel, pour lisibilité) */}
-  <div className="absolute inset-0 bg-black/30" />
-
-  {/* Texte à gauche */}
-  <div className="absolute inset-0 flex items-center px-6 sm:px-12 lg:px-20">
-    <div className="text-left text-white max-w-xl space-y-4">
-      <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold">
-        Le Marketing Digital qui transforme votre business
-      </h1>
-      <p className="text-sm sm:text-base lg:text-lg">
-        Publicité ciblée, automatisation, contenu viral : une stratégie complète pour faire décoller votre activité.
-      </p>
-    </div>
-  </div>
-
-  {/* Appel à l’action en bas à droite */}
-  <div className="absolute bottom-35 right-4 space-y-2">
+<div className="absolute inset-0 flex items-center px-6 sm:px-12 lg:px-20">
+  <div className="text-left text-white max-w-xl space-y-4">
+    <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold">
+      Le Marketing Digital qui transforme votre business
+    </h1>
+    <p className="text-sm sm:text-base lg:text-lg">
+      Publicité ciblée, automatisation, contenu viral : une stratégie complète pour faire décoller votre activité.
+    </p>
+    {/* Bouton en version normale */}
     <Link
       href={whatsappLink}
       target="_blank"
-      className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 transition text-lg"
+      className="inline-block    bg-orange-500 text-white px-4 py-2 hover:bg-orange-600 transition text-sm sm:text-base md:text-lg rounded-2xl"
     >
-      📞 Discutons de votre stratégie sur WhatsApp 
+      📞 Discutons de votre stratégie
     </Link>
   </div>
+</div>
 </section>
+
 
 
 
