@@ -1,8 +1,8 @@
 import './globals.css';
 import { ReactNode } from 'react';
-import { Roboto } from 'next/font/google';
+import { Open_Sans } from 'next/font/google'; // Importation de la nouvelle police
 
-const roboto = Roboto({
+const openSans = Open_Sans({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap', // améliore le rendu rapide des polices
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="theme-color" content="#001f3f" />
       </head>
 
-      <body className={`${roboto.className} bg-white text-gray-900 antialiased`}>
+      <body className={`${openSans.className} bg-white text-gray-900 antialiased`}>
         {children}
       </body>
     </html>
